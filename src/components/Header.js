@@ -13,8 +13,8 @@ class Header extends React.Component {
     return(
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" className='d-flex justyfiy-content-between px-5'>
         <Navbar.Brand>My Favorite Flowers</Navbar.Brand>
-        <Link to="/">Home </Link>
-        <Link to="/favFlowers"> Fav-Flowers</Link>
+        <Link to="/" className='px-2'>Home </Link>
+        <Link to="/favFlowers" className='px-2'> Fav-Flowers</Link>
         {isAuthenticated ? <LogoutButton /> : <LoginButton />}
       </Navbar>
     );
